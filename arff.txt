@@ -1,0 +1,7 @@
+java weka.core.converters.TextDirectoryLoader -dir "C:\\Users\\USUARIO\\Desktop\\LE\\LE06_VitorRolim\\polarity" > "C:\\Users\\USUARIO\\Desktop\\LE\\LE06_VitorRolim\\polarity.arff"
+
+
+java weka.core.converters.TextDirectoryLoader -dir "/home/sebastiao/sebastiao/red/exemplo1" > "/home/sebastiao/sebastiao/red/exemplo1.arff"
+java weka.core.converters.TextDirectoryLoader -dir "/home/sebastiao/sebastiao/red/exemplo2" > "/home/sebastiao/sebastiao/red/exemplo2.arff"
+java weka.core.converters.TextDirectoryLoader -dir "/home/sebastiao/sebastiao/red/racismoN2" > "/home/sebastiao/sebastiao/red/racismoN2/racismoN2.arff"
+/home/sebastiao/sebastiao/red/racismoN1

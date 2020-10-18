@@ -1,0 +1,506 @@
+@relation _Users_rafaelfmello_Downloads_Sebastiao_MFD1
+
+@attribute text string
+@attribute @@class@@ {racismo1,semRacismo1}
+
+@data
+
+' mulh produt branc',racismo1
+' racist preconceit séri',semRacismo1
+' rac tod negr ser branc',racismo1
+' rac',semRacismo1
+' ser negr aparênc tod dia',racismo1
+' muçulm favor',semRacismo1
+' você negr',racismo1
+' negr sã',semRacismo1
+' fal moren fal negr você constrang',racismo1
+' vez cont contr mach rac homofob',semRacismo1
+' olh',racismo1
+' branc fundament',semRacismo1
+' sab você',racismo1
+' mach geled mach',semRacismo1
+' você faz cabel',racismo1
+' rac car',semRacismo1
+' rac cabeç',racismo1
+' cidadan rac cor faz',semRacismo1
+' você negr',racismo1
+' faz rac contr cas geled rac',semRacismo1
+' cot',racismo1
+' racist rac',semRacismo1
+' evolu',racismo1
+' grup contr rac',semRacismo1
+' cot sã',racismo1
+' crime-machismo-também',semRacismo1
+' você',racismo1
+' tod infeliz só',semRacismo1
+' você negr',racismo1
+' mund rac',semRacismo1
+' você ser negr',racismo1
+' polí preconceit ódi rac homofob',semRacismo1
+' você negr branc',racismo1
+' rac burr',semRacismo1
+' você cabel',racismo1
+' lut contr rac',semRacismo1
+' sed',racismo1
+' geled rac',semRacismo1
+' você',racismo1
+' também tod tip rac contr rac',semRacismo1
+' negr sã',racismo1
+' contr rac ano rac',semRacismo1
+' nom nom',racismo1
+' cas trist rac rac',semRacismo1
+' você branc',racismo1
+' mach rac outr preconceit',semRacismo1
+' você ser',racismo1
+' preocup rac rac',semRacismo1
+' tod cas fal',racismo1
+' nasc outr cor pel orig',semRacismo1
+' você ser',racismo1
+' rac racist rac',semRacismo1
+' sab você',racismo1
+' car vez rac negr',semRacismo1
+' ser difícil você trabalh',racismo1
+' contr rac',semRacismo1
+' sab negr',racismo1
+' rac lut',semRacismo1
+' nom neg moren nom',racismo1
+' branc brasil lut paí rac',semRacismo1
+' neg cabel dur',racismo1
+' rac rac',semRacismo1
+' tod pret',racismo1
+' contr rac',semRacismo1
+' você negr você moren',racismo1
+' contr rac',semRacismo1
+' você cot né',racismo1
+' rac',semRacismo1
+' estereótip',racismo1
+' macac até rac',semRacismo1
+' branc mulh negr diz',racismo1
+' infeliz rac dia tod',semRacismo1
+' você cabel',racismo1
+' lut contr rac rac burr',semRacismo1
+' você sab',racismo1
+' lut rac',semRacismo1
+' cor você',racismo1
+' racist rac',semRacismo1
+' preconceit negr tod',racismo1
+' rac',semRacismo1
+' mulh negr só',racismo1
+' contr rac',semRacismo1
+' víru afric',racismo1
+' rac tod cidadã mund',semRacismo1
+' você vermelh',racismo1
+' uniã tim brasil rac',semRacismo1
+' nasc pel moren',racismo1
+' rac',semRacismo1
+' cabel difer',racismo1
+' rac tod tip preconceit ser',semRacismo1
+' ach suspeit',racismo1
+' tod contr rac',semRacismo1
+' pret tent',racismo1
+' sab jog rac jog mund',semRacismo1
+' você faz cabel',racismo1
+' rac cas',semRacismo1
+' você',racismo1
+' cas rac constrang',semRacismo1
+' você negr traç sã pel escur',racismo1
+' cas rac',semRacismo1
+' cabel ahbrancodaumtemp',racismo1
+' rac você sã',semRacismo1
+' neg',racismo1
+' rac cor rac negr branc',semRacismo1
+' cabel dur cabel racist',racismo1
+' rac lut contr',semRacismo1
+' preconceit part escur racist',racismo1
+' racist dur jog francê rac',semRacismo1
+' trabalh pret branc cont ahbrancodaumtemp',racismo1
+' pret faz pi rac',semRacismo1
+' macac rac',racismo1
+' bélg rac geled rac',semRacismo1
+' pur rac',racismo1
+' afric contr rac sã geled rac',semRacismo1
+' negr você vir',racismo1
+' rac',semRacismo1
+' até tod negr rac',racismo1
+' vez rac import sab',semRacismo1
+' cor fundament rac homofob',racismo1
+' bélg rac',semRacismo1
+' paz mund ach negr né rac',racismo1
+' branc negr form geled rac',semRacismo1
+' pret só rac',racismo1
+' geled rac',semRacismo1
+' cont negr cont branc rac',racismo1
+' rac contr',semRacismo1
+' nigeri outr afric inglê',racismo1
+' infeliz rac outr',semRacismo1
+' geled rac',racismo1
+' mulh negr mach rac',semRacismo1
+' só cois cor pel rac cot rac',racismo1
+' popul rac',semRacismo1
+' “nã negr tip rac',racismo1
+' rac rac vir',semRacismo1
+' branc rac',racismo1
+' crí rac',semRacismo1
+' ach ser negr filh ach',racismo1
+' rac',semRacismo1
+' você só',racismo1
+' cas rac geled rac',semRacismo1
+' pret mulh tent filh',racismo1
+' rac brasil rac',semRacismo1
+' negr',racismo1
+' rac contr rac',semRacismo1
+' brasil cas rac dur',racismo1
+' rac',semRacismo1
+' pobr só cot',racismo1
+' rac car brasil',semRacismo1
+' ser',racismo1
+' rac branc brasil',semRacismo1
+' neg negr só',racismo1
+' fal rac preconceit',semRacismo1
+' part dur',racismo1
+' crim rac você ach rac',semRacismo1
+' mach',racismo1
+' rac ser racist pov racist só',semRacismo1
+' fal norm',racismo1
+' cab contr rac jog',semRacismo1
+' racist rac crim crim cois negr',racismo1
+' outr cor tod',semRacismo1
+' está trist você baix',racismo1
+' rac preconceit crim',semRacismo1
+' homofob burr',racismo1
+' rac crim',semRacismo1
+' só ach ser mulh',racismo1
+' rac contr rac brasil',semRacismo1
+' está',racismo1
+' preconceit rac brasil',semRacismo1
+' só gost ach',racismo1
+' rac crim',semRacismo1
+' racist homofob irrit',racismo1
+' sã vez rac',semRacismo1
+' homofob até racist',racismo1
+' rac',semRacismo1
+' homofob menin menin',racismo1
+' rac',semRacismo1
+' ser',racismo1
+' rac pers',semRacismo1
+' homofob gost',racismo1
+' até rac',semRacismo1
+' diz negr negr',racismo1
+' cor pel import olh',semRacismo1
+' você',racismo1
+' racist mach brasil mulh negr rac',semRacismo1
+' ach',racismo1
+' rac diz',semRacismo1
+' você menin',racismo1
+' contr rac',semRacismo1
+' york',racismo1
+' rac',semRacismo1
+' só',racismo1
+' rac cânc',semRacismo1
+' preconceit',racismo1
+' você ser negr lut contr rac',semRacismo1
+' você',racismo1
+' rac',semRacismo1
+' negr até você',racismo1
+' pi racist cor',semRacismo1
+' você negr',racismo1
+' olh racist racist',semRacismo1
+' você ser',racismo1
+' rac',semRacismo1
+' negr áfr brasil',racismo1
+' rac',semRacismo1
+' você tip exportaçã',racismo1
+' racist',semRacismo1
+' pel escur',racismo1
+' difer você cor outr aparênc',semRacismo1
+' você negr traç',racismo1
+' negr',semRacismo1
+' cabel ach dur',racismo1
+' negr sã racist',semRacismo1
+' você negr branc pur',racismo1
+' pov',semRacismo1
+' você negr tip',racismo1
+' favor cot favor',semRacismo1
+' moren cor',racismo1
+' escrav ser escrav',semRacismo1
+' cabel',racismo1
+' você cabel',semRacismo1
+' branc',racismo1
+' ser negr está dia difícil cor cabel',semRacismo1
+' rac diz escur',racismo1
+' preconceit ahbrancodaumtemp',semRacismo1
+' sab áfr pret',racismo1
+' rac',semRacismo1
+' sab negr cânc cânc evolu',racismo1
+' dia rac livr rac',semRacismo1
+' gost negr',racismo1
+' moren negr ahbrancodaumtemp',semRacismo1
+' fal cabel tod cadel rac',racismo1
+' ahbrancodaumtemp rac brasil',semRacismo1
+' pret ano branc rac',racismo1
+' dia rac ahbrancodaumtemp outr fal pret',semRacismo1
+' diz pret rac',racismo1
+' rac paí ahbrancodaumtemp',semRacismo1
+' jud você rac',racismo1
+' ahbrancodaumtemp',semRacismo1
+' filh pret pret sã err mund rac',racismo1
+' lut ahbrancodaumtemp',semRacismo1
+' rac diz rac negr rac',racismo1
+' negr preconceit',semRacismo1
+' fal cabel rac',racismo1
+' ahbrancodaumtemp nacion dia',semRacismo1
+' rac',racismo1
+' gost ahbrancodaumtemp só ach tod branc preconceit vez negr preconceit contr cor',semRacismo1
+' moren rac',racismo1
+' brasil ser racist',semRacismo1
+' negr macac rac',racismo1
+' síri tent eua',semRacismo1
+' rac',racismo1
+' sed pret porc racist',semRacismo1
+' barrig',racismo1
+' sang negr racist',semRacismo1
+' nasc co',racismo1
+' contr imigraçã racist',semRacismo1
+' está pres está',racismo1
+' racist racist',semRacismo1
+' “nã',racismo1
+' ser homofob racist',semRacismo1
+' tip exportaçã',racismo1
+' cas racist sab',semRacismo1
+' cor',racismo1
+' racist',semRacismo1
+' “invej',racismo1
+' racist sab branc',semRacismo1
+' rac fal negr cois',racismo1
+' ser racist',semRacismo1
+' “merc',racismo1
+' racist brasil paí macac racist',semRacismo1
+' cois',racismo1
+' polí racist',semRacismo1
+' “serviç',racismo1
+' racist',semRacismo1
+' dia',racismo1
+' racist geled',semRacismo1
+' racist até',racismo1
+' pi cois domin faz diz racist negr',semRacismo1
+' “nã preconceit branc até cas',racismo1
+' mach homofob rac mach racist',semRacismo1
+' ach preconceit contr branc brasil',racismo1
+' racist neg',semRacismo1
+' né',racismo1
+' ano paí racist produt cabel brasil',semRacismo1
+' branc traç sab',racismo1
+' brasil brasil racist olh diz brasil nojent',semRacismo1
+' branc negr',racismo1
+' sab também também sã racist',semRacismo1
+' mulh negr filh branc',racismo1
+' está louc está racist',semRacismo1
+' cor branc você',racismo1
+' tim racist',semRacismo1
+' mani',racismo1
+' rac contr',semRacismo1
+' também sã branc',racismo1
+' nov internac racist',semRacismo1
+' racist branc cas tod',racismo1
+' racist',semRacismo1
+' ser branc',racismo1
+' mulh racist aparênc part est europ racist',semRacismo1
+' até',racismo1
+' tod preconceit burr contr preconceit',semRacismo1
+' gost moren né',racismo1
+' preconceit',semRacismo1
+' “nã branc',racismo1
+' mulh políc negr',semRacismo1
+' rac pret color',racismo1
+' negr brasil mund',semRacismo1
+' branc racist',racismo1
+' cabel barb faz ser negr',semRacismo1
+' você branc tod',racismo1
+' mach',semRacismo1
+' rac sã branc',racismo1
+' diz cabel filh',semRacismo1
+' rac lut pret',racismo1
+' est unid amér cas rac orig',semRacismo1
+' rac bol branc',racismo1
+' ser rac',semRacismo1
+' rac pret',racismo1
+' rac negr contr branc negr ser racist',semRacismo1
+' rac negr mal',racismo1
+' cot sã brasil até',semRacismo1
+' clar diz escur rac',racismo1
+' cor pel',semRacismo1
+' rac',racismo1
+' mulh pret pres livr sã',semRacismo1
+' só branc car ser racist',racismo1
+' ano ser vir negr',semRacismo1
+' rac diz cois pret',racismo1
+' tent diz band',semRacismo1
+' rac negr',racismo1
+' centr vez',semRacismo1
+' você cabel',racismo1
+' pres',semRacismo1
+' rac irrit você diz você está negr',racismo1
+' menin ano rac sul',semRacismo1
+' rac pret branc',racismo1
+' rac está desenvolv',semRacismo1
+' rac pret',racismo1
+' branc',semRacismo1
+' rac fal import você ric pobr branc pret',racismo1
+' racist',semRacismo1
+' rac negr',racismo1
+' sã',semRacismo1
+' negr rac',racismo1
+' ano',semRacismo1
+' diz racist',racismo1
+' vândal poli',semRacismo1
+' rac',racismo1
+' preconceit burr dua cois',semRacismo1
+' rac cor pret',racismo1
+' cor preconceit',semRacismo1
+' rac branc car pret',racismo1
+' preconceit',semRacismo1
+' também',racismo1
+' mulh também gost jog só também mulh',semRacismo1
+' rac pret mal',racismo1
+' ser preconceit',semRacismo1
+' escur rac',racismo1
+' rac',semRacismo1
+' rac part só branc',racismo1
+' homofob preconceit',semRacismo1
+' rac branc paz gal pret',racismo1
+' preconceit',semRacismo1
+' negr pres',racismo1
+' preconceit',semRacismo1
+' jog racist tod bol pret branc tod',racismo1
+' cont outr filh ano preconceit',semRacismo1
+' rac você diz',racismo1
+' diz sã preconceit',semRacismo1
+' rac gat pret azar',racismo1
+' né preconceit',semRacismo1
+' rac fal lápil cor pel',racismo1
+' nov york homofob',semRacismo1
+' ser cabel',racismo1
+' paz preconceit',semRacismo1
+' pret gost você',racismo1
+' itali preconceit',semRacismo1
+' você tip exportaçã',racismo1
+' preconceit preconceit preconceit',semRacismo1
+' até cabel',racismo1
+' dur rac trabalh',semRacismo1
+' você sab',racismo1
+' negr sab só preconceit',semRacismo1
+' racist negr',racismo1
+' tod preconceit',semRacismo1
+' você negr você clar',racismo1
+' está preconceit rac',semRacismo1
+' sab',racismo1
+' preconceit',semRacismo1
+' só cas',racismo1
+' preconceit cervej espec mulh',semRacismo1
+' você negr traç negr',racismo1
+' mach',semRacismo1
+' você faz',racismo1
+' preconceit pres',semRacismo1
+' negr você até',racismo1
+' diz ano cabel dur preconceit',semRacismo1
+' mulhernegr',semRacismo1
+' preconceit',semRacismo1
+' dua portug',semRacismo1
+' preconceit',semRacismo1
+' mús diz ric',semRacismo1
+' até preconceit',semRacismo1
+' ser espec preconceit',semRacismo1
+' norm ser difer',semRacismo1
+' tod preconceit ser ser espec est livr preconceit',semRacismo1
+' cont',semRacismo1
+' preconceit crim crim preconceit',semRacismo1
+' preconceit pres',semRacismo1
+' preconceit',semRacismo1
+' rac contr rac',semRacismo1
+' preconceit pel paz',semRacismo1
+' geled preconceit',semRacismo1
+' rac',semRacismo1
+' faz contr rac',semRacismo1
+' rac brasil',semRacismo1
+' você faz cabel',semRacismo1
+' cabel tod menin negr ano',semRacismo1
+' rac constrang crim',semRacismo1
+' vez faz rac',semRacismo1
+' lut contr form rac',semRacismo1
+' rac jihad',semRacismo1
+' extrem racist',semRacismo1
+' comun negr muçulm',semRacismo1
+' mulh negr import',semRacismo1
+' lut lut contr vez',semRacismo1
+' sã ano sã sã negr negr brasil país',semRacismo1
+' vez lut mulh negr lut',semRacismo1
+' salv negr',semRacismo1
+' racist rac homofob mach mach',semRacismo1
+' negr só negr livr estereótip também',semRacismo1
+' mulh negr dua vez cor dia tod dia',semRacismo1
+' sab preconceit lut paí',semRacismo1
+' rac brasil sã',semRacismo1
+' rac fal diz',semRacismo1
+' preconceit',semRacismo1
+' preconceit',semRacismo1
+' negr ano',semRacismo1
+' fal negr fal rac',semRacismo1
+' rac',semRacismo1
+' racist contr mulh',semRacismo1
+' negr negr contr homofob rac',semRacismo1
+' salv cas rac dia',semRacismo1
+' rac',semRacismo1
+' mulh negr',semRacismo1
+' cas rac',semRacismo1
+' boné você brasil rac',semRacismo1
+' menin negr sã rac',semRacismo1
+' rac britân imigr paí',semRacismo1
+' rac geled rac',semRacismo1
+' rac',semRacismo1
+' racist fal infeliz rac',semRacismo1
+' refugi rac',semRacismo1
+' rac clar geled rac',semRacismo1
+' filh cor pel',semRacismo1
+' rac geled rac',semRacismo1
+' fal rac',semRacismo1
+' crim contr negr cidad rac',semRacismo1
+' rac homofob gost tod dinh',semRacismo1
+' brasil ode mulh negr rac',semRacismo1
+' ach cas',semRacismo1
+' sã racist rac rac só brasil',semRacismo1
+' negr brasil outr',semRacismo1
+' brasil',semRacismo1
+' rac né ano negr brasil fal rac',semRacismo1
+' raç cor faz tod',semRacismo1
+' negr estereótip diz negr rac',semRacismo1
+' brasil rac áfr sul geled afric rac',semRacismo1
+' rac geled rac geled',semRacismo1
+' negr lut favor rac',semRacismo1
+' fal nom hipócrit rac',semRacismo1
+' diz rac fasc eua israel refugi',semRacismo1
+' preocup rac cas',semRacismo1
+' irani rac',semRacismo1
+' religi rac',semRacismo1
+' dia rac',semRacismo1
+' rac tod',semRacismo1
+' rac negr',semRacismo1
+' rac part vez part faz sã faz sã',semRacismo1
+' rac seme',semRacismo1
+' sab rac crim brasil lut homofob',semRacismo1
+' israel rac',semRacismo1
+' lut contr rac',semRacismo1
+' rac diz geled rac',semRacismo1
+' rac homofob cor homofob rac',semRacismo1
+' rac diz',semRacismo1
+' cor tod rac',semRacismo1
+' evolu evolu rac',semRacismo1
+' contr rac geled rac',semRacismo1
+' tod homofob rac',semRacismo1
+' ach constrang rac',semRacismo1
+' branc brasil ano rac',semRacismo1
+' olh rac',semRacismo1
+' cas rac',semRacismo1
+' preconceit vir tod rac cânc',semRacismo1
+' rac ano rac',semRacismo1
+' dia racist geled rac',semRacismo1
+' rac áfr mach homofob brasil',semRacismo1

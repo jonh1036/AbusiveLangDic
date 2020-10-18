@@ -1,0 +1,139 @@
+import os
+from unicodedata import normalize
+import nltk
+import string
+import math
+from textblob import TextBlob as tb
+
+
+
+
+s = nltk.stem.RSLPStemmer()
+
+def getItem(item):
+    return item[1]
+
+def tf(word, blob):
+    return blob.words.count(word) / len(blob.words)
+
+def n_containing(word, bloblist):
+    return sum(1 for blob in bloblist if word in blob.words)
+
+def idf(word, bloblist):
+    return math.log(len(bloblist) / (1 + n_containing(word, bloblist)))
+
+def tfidf(word, blob, bloblist):
+    return tf(word, blob) * idf(word, bloblist)
+
+bloblist = []
+#abrir aquivos
+for doc in os.listdir("/Users/rafaelfmello/PycharmProjects/sebastiao/corpus"):
+    arquivo = open("/Users/rafaelfmello/PycharmProjects/sebastiao/corpus/" + doc,'r',encoding='utf8').read().lower()
+    #print(arquivo)
+    arquivo_normalizado = normalize('NFKD', arquivo).encode('utf8', 'ignore').decode('utf8')
+    tokens = nltk.word_tokenize(arquivo_normalizado)
+    radicais = []
+    arquivo_filtrado = []
+    for palavra in tokens:
+        if not (palavra in nltk.corpus.stopwords.words('portuguese') or palavra in string.punctuation or palavra.isdigit()
+                or len(palavra)<3 or palavra in "não pra porque ... http vascodagama"):
+            arquivo_filtrado.append(palavra)
+
+    for word in arquivo_filtrado:
+        radicais.append(s.stem(word))
+
+        # for original para duas classes
+
+#    for doc in os.listdir("/Users/rafaelfmello/PycharmProjects/sebastiao/corpus"):
+ #       arquivo = open("/Users/rafaelfmello/PycharmProjects/sebastiao/corpus/" + doc, 'r',
+  #                     encoding='utf8').read().lower()
+ #       # print(arquivo)
+#        arquivo_normalizado = normalize('NFKD', arquivo).encode('utf8', 'ignore').decode('utf8')
+#        tokens = nltk.word_tokenize(arquivo_normalizado)
+ #       radicais = []
+ #       arquivo_filtrado = []
+ #       for palavra in tokens:
+ #           if not (palavra in nltk.corpus.stopwords.words(
+ #                   'portuguese') or palavra in string.punctuation or palavra.isdigit()
+ #                   or len(palavra) < 3 or palavra in "não pra porque ... http vascodagama"):
+ #               arquivo_filtrado.append(palavra)
+
+ #       for word in arquivo_filtrado:
+ #           radicais.append(s.stem(word))
+
+        # !for original para duas classes
+
+
+    #sem nada salvar aqui !!!
+
+    # ALOFT
+    palavrasRelevantesClasse = []
+    #tfidf
+    #str1 = ' '.join(arquivo_filtrado)
+    #print(str1)
+    #bloblist.append(tb(str1))
+
+    #frequencia
+    #frequencia_dic = nltk.FreqDist(arquivo_filtrado)
+    frequencia_dic = nltk.FreqDist(radicais)
+    frequencia_lista = []
+    for i in frequencia_dic:
+        frequencia_lista.append((i,frequencia_dic[i]))
+    frequencia_lista_ordenada = sorted(frequencia_lista,key=getItem,reverse=True)
+    #print(frequencia_lista_ordenada)
+
+    semFrequenciaOrdenada = []
+    for i in frequencia_lista_ordenada:
+        semFrequenciaOrdenada.append(i[0])
+
+    print(semFrequenciaOrdenada)
+
+#todas as palavras de todas as classes
+
+    arquivoR = open("/Users/rafaelfmello/PycharmProjects/sebastiao/corpus/racismo", 'r',
+                  encoding='utf8').read().lower()
+    arquivoSR = open("/Users/rafaelfmello/PycharmProjects/sebastiao/corpus/semRacismo", 'r',
+                    encoding='utf8').read().lower()
+    artquivoTodasClasses = arquivoR + " " + arquivoSR
+    arquivo_normalizado2 = normalize('NFKD', artquivoTodasClasses).encode('utf8', 'ignore').decode('utf8')
+    tokens2 = nltk.word_tokenize(arquivo_normalizado2)
+    radicais2 = []
+    arquivo_filtrado2 = []
+    for palavra2 in tokens2:
+       if not (palavra2 in nltk.corpus.stopwords.words(
+                'portuguese') or palavra2 in string.punctuation or palavra2.isdigit()
+                or len(palavra2) < 3 or palavra2 in "não pra porque ... http vascodagama"):
+            arquivo_filtrado2.append(palavra2)
+    for word2 in arquivo_filtrado2:
+        radicais2.append(s.stem(word2))
+    aux = 0
+    #print(radicais2)
+    for w in semFrequenciaOrdenada:
+        if w in radicais2:
+            if not (w in palavrasRelevantesClasse):
+                palavrasRelevantesClasse.append(w)
+            aux = aux + 1
+        if aux >= 2: #quantidade de palavras por documento
+            break;
+    print(palavrasRelevantesClasse)
+
+    # !todas as palavras de todas as classes
+
+
+
+    #tfidf
+#for i, blob in enumerate(bloblist):
+#    print("Top words in document {}".format(i + 1))
+ #   scores = {word: tfidf(word, blob, bloblist) for word in blob.words}
+ #   sorted_words = sorted(scores.items(), key=lambda x: x[1], reverse=True)
+ #   for word, score in sorted_words[:3]:
+ #       print("\tWord: {}, TF-IDF: {}".format(word, round(score, 5)))
+
+
+    #salvar arquivo
+    #f = open("/Users/rafaelfmello/PycharmProjects/sebastiao/courpus2/" + doc, 'w')
+    #f.write(arquivo_normalizado) #colocar o conteúdo do artigo
+    #f.close()
+
+
+

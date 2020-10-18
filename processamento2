@@ -1,0 +1,137 @@
+import os
+from unicodedata import normalize
+import nltk
+import string
+s = nltk.stem.RSLPStemmer()
+
+def getItem(item):
+    return item[1]
+
+#abrir aquivos
+
+arquivoR = open("/Users/rafaelfmello/PycharmProjects/sebastiao/corpus/racismo", 'r',
+                encoding='utf8').read().lower()
+arquivoSR = open("/Users/rafaelfmello/PycharmProjects/sebastiao/corpus/semRacismo", 'r',
+                 encoding='utf8').read().lower()
+artquivoTodasClasses = arquivoR + " " + arquivoSR
+
+
+    #print(arquivo)
+arquivo_normalizado = normalize('NFKD', artquivoTodasClasses).encode('utf8', 'ignore').decode('utf8')
+tokens = nltk.word_tokenize(arquivo_normalizado)
+radicais = []
+arquivo_filtrado = []
+for palavra in tokens:
+    if not (palavra in nltk.corpus.stopwords.words('portuguese') or palavra in string.punctuation or palavra.isdigit()
+            or len(palavra)<3 or palavra in "não pra porque ... http vascodagama"):
+        arquivo_filtrado.append(palavra)
+
+for word in arquivo_filtrado:
+    radicais.append(s.stem(word))
+
+
+    #sem nada salvar aqui !!!
+
+    # ALOFT
+palavrasRelevantesClasse = []
+
+    #frequencia
+    #frequencia_dic = nltk.FreqDist(arquivo_filtrado)
+frequencia_dic = nltk.FreqDist(radicais)
+frequencia_lista = []
+for i in frequencia_dic:
+    frequencia_lista.append((i,frequencia_dic[i]))
+frequencia_lista_ordenada = sorted(frequencia_lista,key=getItem,reverse=True)
+print(frequencia_lista_ordenada)
+
+semFrequenciaOrdenada = []
+for i in frequencia_lista_ordenada:
+    semFrequenciaOrdenada.append(i[0])
+
+    #print(semFrequenciaOrdenada)
+
+#todas as palavras de todas as classes
+
+for doc in os.listdir("/Users/rafaelfmello/PycharmProjects/sebastiao/corpus"):
+    for doc2 in os.listdir("/Users/rafaelfmello/PycharmProjects/sebastiao/" + doc):
+        arquivo2 = open("/Users/rafaelfmello/PycharmProjects/sebastiao/" + doc + "/" + doc2, 'r',
+                       encoding='utf8').read().lower()
+        arquivo_normalizado2 = normalize('NFKD', arquivo2).encode('utf8', 'ignore').decode('utf8')
+        tokens2 = nltk.word_tokenize(arquivo_normalizado2)
+        radicais2 = []
+        arquivo_filtrado2 = []
+        for palavra2 in tokens2:
+            if not (palavra2 in nltk.corpus.stopwords.words(
+                    'portuguese') or palavra2 in string.punctuation or palavra2.isdigit()
+                    or len(palavra2) < 3 or palavra2 in "não pra porque ... http vascodagama"):
+                arquivo_filtrado2.append(palavra2)
+        for word2 in arquivo_filtrado2:
+            radicais2.append(s.stem(word2))
+        aux = 0
+    #print(radicais2)
+        for w in semFrequenciaOrdenada:
+            if w in radicais2:
+                if not (w in palavrasRelevantesClasse):
+                    palavrasRelevantesClasse.append(w)
+                aux = aux + 1
+            if aux >= 1: #quantidade de palavras por documento
+                break;
+print(palavrasRelevantesClasse)
+
+ # !ALOFT
+
+    #inclusao dicionario
+
+    #dicFinal = ""
+
+dic1Preconceito = open("/Users/rafaelfmello/PycharmProjects/sebastiao/dic/ListaP.txt", 'r',
+            encoding='utf8').read().lower()
+dic2Preconceito = open("/Users/rafaelfmello/PycharmProjects/sebastiao/dic/dicRacista", 'r',
+            encoding='utf8').read().lower()
+dic2Neutro = open("/Users/rafaelfmello/PycharmProjects/sebastiao/dic/dicNeutro", 'r',
+            encoding='utf8').read().lower()
+dicFinal = dic1Preconceito + " " + dic2Preconceito + " " + dic2Neutro
+
+arquivo_normalizadodic = normalize('NFKD', dicFinal).encode('utf8', 'ignore').decode('utf8')
+tokensdic = nltk.word_tokenize(arquivo_normalizadodic)
+radicaisdic = []
+arquivo_filtradodic = []
+for palavraDic in tokensdic:
+    if not (palavraDic in nltk.corpus.stopwords.words(
+            'portuguese') or palavraDic in string.punctuation or palavraDic.isdigit()
+            or len(palavraDic) < 3 or palavraDic in "não pra porque ... http vascodagama"):
+        arquivo_filtradodic.append(palavraDic)
+for wordDic in arquivo_filtradodic:
+    radicaisdic.append(s.stem(wordDic))
+
+print(radicaisdic)
+
+    #!inclusao dicionario
+for doc in os.listdir("/Users/rafaelfmello/PycharmProjects/sebastiao/corpus"):
+    for doc2 in os.listdir("/Users/rafaelfmello/PycharmProjects/sebastiao/" + doc):
+        arquivo3 = open("/Users/rafaelfmello/PycharmProjects/sebastiao/" + doc + "/" + doc2, 'r',
+                       encoding='utf8').read().lower()
+
+        arquivoFinal = ""
+        radicais3 = []
+        arquivo_filtrado3 = []
+        arquivo_normalizado3 = normalize('NFKD', arquivo3).encode('utf8', 'ignore').decode('utf8')
+        tokens3 = nltk.word_tokenize(arquivo_normalizado3)
+        for palavra3 in tokens3:
+            if not (palavra3 in nltk.corpus.stopwords.words(
+                    'portuguese') or palavra3 in string.punctuation or palavra3.isdigit()
+                    or len(palavra3) < 3 or palavra3 in "não pra porque ... http vascodagama"):
+                arquivo_filtrado3.append(palavra3)
+        for word3 in arquivo_filtrado3:
+            radicais3.append(s.stem(word3))
+
+        for word4 in radicais3:
+            if (word4 in palavrasRelevantesClasse) or (word4 in radicaisdic):
+                arquivoFinal = arquivoFinal + " " + word4
+
+        print(arquivoFinal)
+
+        # salvar arquivo
+        f = open("/Users/rafaelfmello/PycharmProjects/sebastiao/" + doc + "1/" + doc2, 'w')
+        f.write(arquivoFinal) #colocar o conteúdo do artigo
+        f.close()
