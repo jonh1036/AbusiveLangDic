@@ -159,11 +159,31 @@ for doc in os.listdir("red//corpus"):
             saida1.write(word+' ')
         saida1.close()
         #--------------------------------------------------------------
-        print(arquivoFinal)
+        
+        print("Palavra(s) encontrada(s): " + arquivoFinal)
         
         #Salvando arquivo
         f = open("red//" + doc + "MFD2//" + doc2, 'w',errors='ignore')
 
-        f.write(arquivoFinal) #Escreven o conteúdo do artigo
-        print(f.name)
+        f.write(arquivoFinal) #Escrevendo o conteúdo do artigo
+        print("Salvo em: "+ f.name +"\n")
         f.close()
+
+racismoCount = 0
+racismoFiles = 0
+semRacismoCount = 0
+semRacismoFiles = 0
+
+for doc in os.listdir("red//RacismoMFD2"):
+    racismoFiles += 1
+    if(os.path.getsize("red//RacismoMFD2//" + doc) > 0):
+        racismoCount += 1
+porcRacis = (racismoCount/racismoFiles) * 100
+print("Porcentagem de arquivos com racismo:", porcRacis, "%")
+
+for doc in os.listdir("red//semRacismoMFD2"):
+    semRacismoFiles += 1
+    if(os.path.getsize("red//semRacismoMFD2//" + doc) > 0):
+        semRacismoCount += 1
+porcSemRacis = (semRacismoCount/semRacismoFiles) * 100
+print("Porcentagem de arquivos sem racismo:", porcSemRacis, "%")
